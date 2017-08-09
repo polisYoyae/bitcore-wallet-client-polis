@@ -26,9 +26,8 @@
   "dependencies": {
     "async": "^0.9.0",
     "bip38": "^1.3.0",
-    "bitcore-lib": "^0.14.0",
-    "bitcore-lib-dash": "github:snogcel/bitcore-lib-dash#master_v0.14.0",
-    "bitcore-mnemonic-dash": "github:dashpay/bitcore-mnemonic-dash#master_v1.2.3",
+    "bitcore-lib-dash": "^0.14.3",
+    "bitcore-mnemonic-dash": "^1.2.3",
     "bitcore-payment-protocol-dash": "github:dashpay/bitcore-payment-protocol-dash#master_v1.2.2",
     "json-stable-stringify": "^1.0.0",
     "lodash": "^3.3.1",
@@ -37,7 +36,7 @@
     "superagent": "^3.4.1"
   },
   "devDependencies": {
-    "bitcore-wallet-service-dash": "github:dashpay/bitcore-wallet-service-dash#master_v1.15.0",
+    "bitcore-wallet-service-dash": "^1.18.0",
     "browserify": "^13.1.0",
     "chai": "^1.9.1",
     "coveralls": "^2.11.2",
