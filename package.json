@@ -26,8 +26,8 @@
   "dependencies": {
     "async": "^0.9.0",
     "bip38": "^1.3.0",
-    "bitcore-lib-polis": "^0.14.3",
-    "bitcore-mnemonic-polis": "^1.2.3",
+    "bitcore-lib-polis": "github:polispay/bitcore-lib-polis",
+    "bitcore-mnemonic-polis": "github:polispay/bitcore-mnemonic-polis",
     "bitcore-payment-protocol-polis": "github:polispay/bitcore-payment-protocol-polis",
     "json-stable-stringify": "^1.0.0",
     "lopolis": "^3.3.1",
@@ -36,7 +36,7 @@
     "superagent": "^3.4.1"
   },
   "devDependencies": {
-    "bitcore-wallet-service-polis": "^1.18.0",
+    "bitcore-wallet-service-polis": "github:polispay/bitcore-wallet-service-polis",
     "browserify": "^13.1.0",
     "chai": "^1.9.1",
     "coveralls": "^2.11.2",
