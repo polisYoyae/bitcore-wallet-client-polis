@@ -1,38 +1,38 @@
 # Bitcore-Dash Wallet Client
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-client-dash.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-client-dash)
-[![Build Status](https://img.shields.io/travis/dashpay/bitcore-wallet-client-dash.svg?branch=master&style=flat-square)](https://travis-ci.org/dashpay/bitcore-wallet-client-dash)
-[![Coverage Status](https://coveralls.io/repos/dashpay/bitcore-wallet-client-dash/badge.svg)](https://coveralls.io/r/dashpay/bitcore-wallet-client-dash)
+[![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-client-polis.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-client-polis)
+[![Build Status](https://img.shields.io/travis/polispay/bitcore-wallet-client-polis.svg?branch=master&style=flat-square)](https://travis-ci.org/polispay/bitcore-wallet-client-polis)
+[![Coverage Status](https://coveralls.io/repos/polispay/bitcore-wallet-client-polis/badge.svg)](https://coveralls.io/r/polispay/bitcore-wallet-client-polis)
 
-The *official* client library for [bitcore-wallet-service-dash] (https://github.com/dashpay/bitcore-wallet-service-dash).
+The *official* client library for [bitcore-wallet-service-polis] (https://github.com/polispay/bitcore-wallet-service-polis).
 
 ## Description
 
-This package communicates with BWS [bitcore-dash wallet service](https://github.com/dashpay/bitcore-wallet-service-dash) using the REST API. All REST endpoints are wrapped as simple async methods. All relevant responses from BWS are checked independently by the peers, thus the importance of using this library when talking to a third party BWS instance.
+This package communicates with BWS [bitcore-polis wallet service](https://github.com/polispay/bitcore-wallet-service-polis) using the REST API. All REST endpoints are wrapped as simple async methods. All relevant responses from BWS are checked independently by the peers, thus the importance of using this library when talking to a third party BWS instance.
 
-See [bitcore-wallet-dash] (https://github.com/dashpay/bitcore-wallet-dash) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client-dash.
+See [bitcore-wallet-polis] (https://github.com/polispay/bitcore-wallet-polis) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client-polis.
 
 ## Get Started
 
-You can start using bitcore-wallet-client-dash in any of these two ways:
+You can start using bitcore-wallet-client-polis in any of these two ways:
 
-* via [Bower](http://bower.io/): by running `bower install bitcore-wallet-client-dash` from your console
-* or via [NPM](https://www.npmjs.com/package/bitcore-wallet-client-dash): by running `npm install bitcore-wallet-client-dash` from your console.
+* via [Bower](http://bower.io/): by running `bower install bitcore-wallet-client-polis` from your console
+* or via [NPM](https://www.npmjs.com/package/bitcore-wallet-client-polis): by running `npm install bitcore-wallet-client-polis` from your console.
 
 ## Example
 
-Start your own local [bitcore-dash wallet service](https://github.com/dashpay/bitcore-wallet-service-dash) instance. In this example we assume you have `bitcore-wallet-service-dash` running on your `localhost:3232`.
+Start your own local [bitcore-polis wallet service](https://github.com/polispay/bitcore-wallet-service-polis) instance. In this example we assume you have `bitcore-wallet-service-polis` running on your `localhost:3232`.
 
 Then create two files `irene.js` and `tomas.js` with the content below:
 
 **irene.js**
 
 ``` javascript
-var Client = require('bitcore-wallet-client-dash');
+var Client = require('bitcore-wallet-client-polis');
 
 
 var fs = require('fs');
-var BWS_INSTANCE_URL = 'https://bws.dev.dash.org/bws/api'
+var BWS_INSTANCE_URL = 'https://bws.dev.polis.org/bws/api'
 
 var client = new Client({
   baseUrl: BWS_INSTANCE_URL,
@@ -54,11 +54,11 @@ client.createWallet("My Wallet", "Irene", 2, 2, {network: 'testnet'}, function(e
 
 ``` javascript
 
-var Client = require('bitcore-wallet-client-dash');
+var Client = require('bitcore-wallet-client-polis');
 
 
 var fs = require('fs');
-var BWS_INSTANCE_URL = 'https://bws.dev.dash.org/bws/api'
+var BWS_INSTANCE_URL = 'https://bws.dev.polis.org/bws/api'
 
 var secret = process.argv[2];
 if (!secret) {
@@ -104,10 +104,10 @@ client.joinWallet(secret, "Tomas", {}, function(err, wallet) {
 });
 ```
 
-Install `bitcore-wallet-client-dash` before start:
+Install `bitcore-wallet-client-polis` before start:
 
 ```
-npm i bitcore-wallet-client-dash
+npm i bitcore-wallet-client-polis
 ```
 
 Create a new wallet with the first script:
@@ -785,7 +785,7 @@ Returns exchange rate for the specified currency & timestamp.
 
 **opts.ts**: `Date`, A timestamp to base the rate on (default Date.now()).
 
-**opts.provider**: `String`, A provider of exchange rates (default 'dashpay').
+**opts.provider**: `String`, A provider of exchange rates (default 'polispay').
 
 **Returns**: `Object`, rates - The exchange rate.
 

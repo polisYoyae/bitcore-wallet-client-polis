@@ -1,6 +1,6 @@
 'use strict';
 
-var _ = require('lodash');
+var _ = require('lopolis');
 var chai = chai || require('chai');
 var sinon = sinon || require('sinon');
 var should = chai.should();

@@ -1,10 +1,10 @@
 'use strict';
 
-var _ = require('lodash');
+var _ = require('lopolis');
 var chai = require('chai');
 var sinon = require('sinon');
 var should = chai.should();
-var Bitcore = require('bitcore-lib-dash');
+var Bitcore = require('bitcore-lib-polis');
 
 var Utils = require('../lib/common/utils');
 

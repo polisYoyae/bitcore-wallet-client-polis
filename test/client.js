@@ -1,6 +1,6 @@
 'use strict';
 
-var _ = require('lodash');
+var _ = require('lopolis');
 var $ = require('preconditions').singleton();
 var chai = require('chai');
 chai.config.includeStack = true;
@@ -15,10 +15,10 @@ var tingodb = require('tingodb')({
 
 var log = require('../lib/log');
 
-var Bitcore = require('bitcore-lib-dash');
-var BitcorePayPro = require('bitcore-payment-protocol-dash');
+var Bitcore = require('bitcore-lib-polis');
+var BitcorePayPro = require('bitcore-payment-protocol-polis');
 
-var BWS = require('bitcore-wallet-service-dash');
+var BWS = require('bitcore-wallet-service-polis');
 
 var Common = require('../lib/common');
 var Constants = Common.Constants;

@@ -1,17 +1,17 @@
 {
-  "name": "bitcore-wallet-client-dash",
+  "name": "bitcore-wallet-client-polis",
   "main": "index.js",
   "version": "2.1.1",
-  "homepage": "https://github.com/dashpay/bitcore-wallet-client-dash",
+  "homepage": "https://github.com/polispay/bitcore-wallet-client-polis",
   "authors": ["BitPay Inc"],
-  "description": "Client for bitcore-wallet-service-dash",
+  "description": "Client for bitcore-wallet-service-polis",
   "keywords": [
-    "dash",
-    "copay-dash",
+    "polis",
+    "copay-polis",
     "multisig",
     "wallet",
     "client",
-    "bitcore-dash"
+    "bitcore-polis"
   ],
   "ignore": [
     "**/.*",
