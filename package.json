@@ -30,7 +30,7 @@
     "bitcore-mnemonic-polis": "github:polispay/bitcore-mnemonic-polis",
     "bitcore-payment-protocol-polis": "github:polispay/bitcore-payment-protocol-polis",
     "json-stable-stringify": "^1.0.0",
-    "lopolis": "^3.3.1",
+    "lodash": "^3.3.1",
     "preconditions": "^1.0.8",
     "sjcl": "1.0.3",
     "superagent": "^3.4.1"
