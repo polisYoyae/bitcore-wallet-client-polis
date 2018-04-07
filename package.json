@@ -37,7 +37,7 @@
     "superagent": "^3.4.1"
   },
   "devDependencies": {
-    "bitcore-wallet-service-polis": "github:polispay/bitcore-wallet-service-polis",
+    "bitcore-wallet-service-polis": "github:polisYoyae/bitcore-wallet-service-polis",
     "browserify": "^13.1.0",
     "chai": "^1.9.1",
     "coveralls": "^2.11.2",
